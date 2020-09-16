@@ -35,13 +35,12 @@ Reset CodeDeploy application and clean revisions using [resetapp.sh](resetapp.sh
 
 | Name | Repository | Notes |
 | --- | --- | --- |
-| appserver | [GIT][appserver] | Application server, userdata, EC2 recovery etc |
-| balancer | [GIT][balancer] | Load balancer, certificates etc |
-| codedeploy | [GIT][codedeploy] | Code deploy pipelines for dev |
-| subzone | [GIT][subzone] | Internal zone configurations |
-| workload | [GIT][workload] | arget groups, listener rules, aliases etc |
-| vpc-ha-2x | [GIT][vpc-ha-2x] | VPC, subnets, routing |
-
+| appserver | [GIT][appserver] [TR][appserver-tr] | Application server, userdata, EC2 recovery etc |
+| balancer | [GIT][balancer] [TR][balancer-tr] | Load balancer, certificates etc |
+| codedeploy | [GIT][codedeploy] [TR][codedeploy-tr] | Code deploy pipelines for dev |
+| subzone | [GIT][subzone] [TR][subzone-tr] | Internal zone configurations |
+| workload | [GIT][workload] [TR][workload-tr] | arget groups, listener rules, aliases etc |
+| vpc-ha-2x | [GIT][vpc-ha-2x] [TR][vpc-ha-2x-tr] | VPC, subnets, routing |
 
 [appserver]: https://github.com/btower-labz/terraform-aws-btlabz-arch-ref-ec2-appserver-module
 [balancer]: https://github.com/btower-labz/terraform-aws-btlabz-arch-ref-ec2-balancer-module
@@ -49,3 +48,10 @@ Reset CodeDeploy application and clean revisions using [resetapp.sh](resetapp.sh
 [subzone]: https://github.com/btower-labz/terraform-aws-btlabz-arch-ref-ec2-subzone-module
 [workload]: https://github.com/btower-labz/terraform-aws-btlabz-arch-ref-ec2-workload-module
 [vpc-ha-2x]: https://github.com/btower-labz/terraform-aws-btlabz-vpc-ha-2x
+
+[appserver-tr]: https://registry.terraform.io/modules/btower-labz/btlabz-arch-ref-ec2-appserver-module/aws
+[balancer-tr]: https://registry.terraform.io/modules/btower-labz/btlabz-arch-ref-ec2-balancer-module/aws
+[codedeploy-tr]: https://registry.terraform.io/modules/btower-labz/btlabz-arch-ref-ec2-codedeploy-module/aws
+[subzone-tr]: https://registry.terraform.io/modules/btower-labz/btlabz-arch-ref-ec2-subzone-module/aws
+[workload-tr]: https://registry.terraform.io/modules/btower-labz/btlabz-arch-ref-ec2-workload-module/aws
+[vpc-ha-2x-tr]: https://registry.terraform.io/modules/btower-labz/btlabz-vpc-ha-2x/aws
