@@ -25,9 +25,9 @@ Configure terraform backend profile based on [backend.tf.sample](backend.tf.samp
 
 Configure AWS profile for the infrastructure (see [provider.tf](provider.tf))
 
-Deploy using [deploy.sh](deploy.sh)
+Deploy POC using [deploy.sh](deploy.sh)
 
-Update using [update.sh](update.sh)
+Update POC using [update.sh](update.sh)
 
 Reset CodeDeploy application and clean revisions using [resetapp.sh](resetapp.sh)
 
