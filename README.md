@@ -31,7 +31,21 @@ Update POC using [update.sh](update.sh)
 
 Reset CodeDeploy application and clean revisions using [resetapp.sh](resetapp.sh)
 
-```bash
+### Module references
+
+| Name | Repository | Notes |
+| --- | --- | --- |
+| appserver | [GIT][appserver] | Application server, userdata, EC2 recovery etc |
+| balancer | [GIT][balancer] | Load balancer, certificates etc |
+| codedeploy | [GIT][codedeploy] | Code deploy pipelines for dev |
+| subzone | [GIT][subzone] | Internal zone configurations |
+| workload | [GIT][workload] | arget groups, listener rules, aliases etc |
+| vpc-ha-2x | [GIT][vpc-ha-2x] | VPC, subnets, routing |
 
 
-```
+[appserver]: https://github.com/btower-labz/terraform-aws-btlabz-arch-ref-ec2-appserver-module
+[balancer]: https://github.com/btower-labz/terraform-aws-btlabz-arch-ref-ec2-balancer-module
+[codedeploy]: https://github.com/btower-labz/terraform-aws-btlabz-arch-ref-ec2-codedeploy-module
+[subzone]: https://github.com/btower-labz/terraform-aws-btlabz-arch-ref-ec2-subzone-module
+[workload]: https://github.com/btower-labz/terraform-aws-btlabz-arch-ref-ec2-workload-module
+[vpc-ha-2x]: https://github.com/btower-labz/terraform-aws-btlabz-vpc-ha-2x
